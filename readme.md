@@ -14,3 +14,10 @@ output
     Default region name [None]: us-central-1
     Default output format [None]: json
 ```
+
+=====================
+
+terraform init
+terraform validate
+terraform plan
+terraform apply

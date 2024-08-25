@@ -97,7 +97,6 @@ resource "aws_instance" "terraform_instance" {
     key_name="sg-vm"
     vpc_security_group_ids = [aws_security_group.secgrp.id]
     subnet_id = aws_subnet.dpp-public-subnet-01.id
-    associate_public_ip_address = true
     for_each = toset ([ "jenkins-master", "jenkins-slave", "ansible" ])
       tags={
           Name="${each.key}"
